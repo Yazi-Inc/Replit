@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { X, CreditCard, Shield, Clock, Download, Smartphone, Monitor } from 'lucide-react';
 import { FirestoreVideo } from '../lib/firestore';
 
+const res = await fetch("/config");
+const config = await res.json();
+
+
+
 interface PaymentModalProps {
   video: FirestoreVideo;
   isOpen: boolean;
@@ -32,7 +37,7 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
   const handlePayment = () => {
     setIsProcessing(true);
 
-    const paystackPublicKey = import.meta.env.VITE_PAYSTACK_PUBLIC_KEY;
+    const paystackPublicKey = config.paystackPublicKey;
     
     if (!paystackPublicKey) {
       console.error('Paystack public key not found');
