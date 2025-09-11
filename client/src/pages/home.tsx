@@ -363,7 +363,9 @@ export default function Home() {
                       className="w-16 h-10 object-cover rounded"
                     />
                     <div className="flex-1">
-                      <p className="text-sm font-medium"><a href={video.videoUrl} {video.title}</a></p>
+                      <a href={video.videoUrl}>
+                        <p className="text-sm font-medium">{video.title}</p>
+                      </a>
                       <p className="text-xs text-muted-foreground">{video.duration} • {video.price}</p>
                     </div>
                   </div>
