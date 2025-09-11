@@ -38,7 +38,7 @@ const RELATED_VIDEOS = [
     duration: '3 min',
     //price: 'GH₵75.00',
     thumbnail: 'https://i0.wp.com/gis.edu.gh/wp-content/uploads/2023/04/IMG_1964-scaled.jpg?resize=120%2C80&ssl=1',
-    videUrl: 'https://youtu.be/-izTfYJKhbc?si=8W_h6uk4Nmo9CWQM',
+    videUrl: 'https://youtu.be/-izTfYJKhbc?si=L8JnZd87A_mVfFRC',
   },
   {
     id: 'gis_70th_celebration',
