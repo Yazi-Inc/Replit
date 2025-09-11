@@ -32,7 +32,7 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
 
   if (!isOpen) return null;
 
-  const handlePayment = () => async {
+  const handlePayment = async () => {
     setIsProcessing(true);
     const res = await fetch("/config");
     const config = await res.json();
