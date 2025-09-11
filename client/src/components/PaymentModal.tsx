@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { X, CreditCard, Shield, Clock, Download, Smartphone, Monitor } from 'lucide-react';
 import { FirestoreVideo } from '../lib/firestore';
 
-const res = await fetch("/config");
-const config = await res.json();
 
 
 
@@ -34,8 +32,11 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
 
   if (!isOpen) return null;
 
-  const handlePayment = () => {
+  const handlePayment = () => async {
     setIsProcessing(true);
+    const res = await fetch("/config");
+    const config = await res.json();
+
 
     const paystackPublicKey = config.paystackPublicKey;
     
