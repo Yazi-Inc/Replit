@@ -27,24 +27,24 @@ const RELATED_VIDEOS = [
   {
     id: 'gis_virtual_tour',
     title: 'GIS Virtual Campus Tour',
-    duration: '12 min',
-    price: 'GH₵35.00',
+    duration: '23 min',
+    //price: 'GH₵35.00',
     thumbnail: 'https://i0.wp.com/gis.edu.gh/wp-content/uploads/2024/09/IMG_9550-1-scaled.jpg?resize=120%2C80&ssl=1',
     videoUrl: 'https://youtu.be/z7HD5iI9H9k?si=b_NPLE91uD5TdCnf',
   },
   {
     id: 'gis_graduation',
     title: 'GIS Graduation Ceremony 2024',
-    duration: '45 min',
-    price: 'GH₵75.00',
+    duration: '3 min',
+    //price: 'GH₵75.00',
     thumbnail: 'https://i0.wp.com/gis.edu.gh/wp-content/uploads/2023/04/IMG_1964-scaled.jpg?resize=120%2C80&ssl=1',
-    videUrl: '',
+    videUrl: 'https://youtu.be/-izTfYJKhbc?si=8W_h6uk4Nmo9CWQM',
   },
   {
     id: 'gis_70th_celebration',
     title: 'GIS 70th Anniversary Celebration',
-    duration: '30 min',
-    price: 'GH₵60.00',
+    duration: '2 hr 53 min',
+    //price: 'GH₵60.00',
     thumbnail: 'https://i0.wp.com/gis.edu.gh/wp-content/uploads/2025/08/Header_1_green_logo_gis_at_70-1.png?resize=120%2C80&ssl=1',
     videoUrl: 'https://www.youtube.com/live/ru_T60H6MwE?si=q7eVK7pyz1oxhOhp',
   },
@@ -366,7 +366,7 @@ export default function Home() {
                       <a href={video.videoUrl}>
                         <p className="text-sm font-medium">{video.title}</p>
                       </a>
-                      <p className="text-xs text-muted-foreground">{video.duration} • {video.price}</p>
+                      <p className="text-xs text-muted-foreground">{video.duration}</p>
                     </div>
                   </div>
                 ))}
