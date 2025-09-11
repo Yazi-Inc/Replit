@@ -30,6 +30,7 @@ const RELATED_VIDEOS = [
     duration: '12 min',
     price: 'GH₵35.00',
     thumbnail: 'https://i0.wp.com/gis.edu.gh/wp-content/uploads/2024/09/IMG_9550-1-scaled.jpg?resize=120%2C80&ssl=1',
+    videoUrl: 'https://youtu.be/z7HD5iI9H9k?si=b_NPLE91uD5TdCnf',
   },
   {
     id: 'gis_graduation',
@@ -37,6 +38,7 @@ const RELATED_VIDEOS = [
     duration: '45 min',
     price: 'GH₵75.00',
     thumbnail: 'https://i0.wp.com/gis.edu.gh/wp-content/uploads/2023/04/IMG_1964-scaled.jpg?resize=120%2C80&ssl=1',
+    videUrl: '',
   },
   {
     id: 'gis_70th_celebration',
@@ -44,6 +46,7 @@ const RELATED_VIDEOS = [
     duration: '30 min',
     price: 'GH₵60.00',
     thumbnail: 'https://i0.wp.com/gis.edu.gh/wp-content/uploads/2025/08/Header_1_green_logo_gis_at_70-1.png?resize=120%2C80&ssl=1',
+    videoUrl: 'https://www.youtube.com/live/ru_T60H6MwE?si=q7eVK7pyz1oxhOhp',
   },
 ];
 
@@ -360,7 +363,7 @@ export default function Home() {
                       className="w-16 h-10 object-cover rounded"
                     />
                     <div className="flex-1">
-                      <p className="text-sm font-medium">{video.title}</p>
+                      <p className="text-sm font-medium"><a href={video.videoUrl} {video.title}</a></p>
                       <p className="text-xs text-muted-foreground">{video.duration} • {video.price}</p>
                     </div>
                   </div>
