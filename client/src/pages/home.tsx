@@ -25,12 +25,12 @@ const SAMPLE_VIDEO: FirestoreVideo = {
 
 const RELATED_VIDEOS = [
   {
-    id: 'gis_virtual_tour',
-    title: 'GIS Virtual Campus Tour',
-    duration: '23 min',
+    id: 'gis_graduation_video',
+    title: 'A Whole Graduation Video',
+    duration: '8 min',
     //price: 'GH₵35.00',
-    thumbnail: 'https://i0.wp.com/gis.edu.gh/wp-content/uploads/2024/09/IMG_9550-1-scaled.jpg?resize=120%2C80&ssl=1',
-    videoUrl: 'https://youtu.be/z7HD5iI9H9k?si=b_NPLE91uD5TdCnf',
+    thumbnail: 'https://img.youtube.com/vi/UwjcKJD_JmY/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/UwjcKJD_JmY?si=0ZQjYpWQMKdhB9ny',
   },
   {
     id: 'gis_graduation',
