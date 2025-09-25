@@ -89,8 +89,8 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ video, access, onPayme
                 <Lock className="w-8 h-8 text-accent" />
               </div>
 
-              <h3 className="text-lg sm:text-2xl font-bold mb-2">Premium Content</h3>
-              <p className="text-sm sm:text-lg mb-4">Get 24-hour unlimited access to this video</p>
+              <h3 className="text-lg sm:text-2xl font-bold mb-2 text-white">Premium Content</h3>
+              <p className="text-sm sm:text-lg mb-4 text-white">Get 24-hour unlimited access to this video</p>
 
               <button
                 onClick={onPaymentRequested}
