@@ -33,20 +33,28 @@ const RELATED_VIDEOS = [
     videoUrl: 'https://youtu.be/UwjcKJD_JmY?si=0ZQjYpWQMKdhB9ny',
   },
   {
-    id: 'gis_graduation',
-    title: 'GIS Graduation Ceremony 2024',
-    duration: '3 min',
+    id: 'gis_campus_tour',
+    title: 'GIS Campus Tour Video',
+    duration: '24 min',
     //price: 'GH₵75.00',
-    thumbnail: 'https://i0.wp.com/gis.edu.gh/wp-content/uploads/2023/04/IMG_1964-scaled.jpg?resize=120%2C80&ssl=1',
-    videoUrl: 'https://youtu.be/-izTfYJKhbc?si=L8JnZd87A_mVfFRC',
+    thumbnail: 'https://img.youtube.com/vi/z7HD5iI9H9k/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/z7HD5iI9H9k?si=CKpmtHRPeIC55y4U',
   },
   {
-    id: 'gis_70th_celebration',
-    title: 'GIS 70th Anniversary Celebration',
-    duration: '2 hr 53 min',
+    id: 'gis_70th_homecoming',
+    title: 'GIS at 70 Homecoming Video',
+    duration: '46 sec',
     //price: 'GH₵60.00',
-    thumbnail: 'https://i0.wp.com/gis.edu.gh/wp-content/uploads/2025/08/Header_1_green_logo_gis_at_70-1.png?resize=120%2C80&ssl=1',
-    videoUrl: 'https://www.youtube.com/live/ru_T60H6MwE?si=q7eVK7pyz1oxhOhp',
+    thumbnail: 'https://img.youtube.com/vi/CO0iKW0MsDk/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/CO0iKW0MsDk?si=wTn9JieUO6IctBAb',
+  },
+  {
+    id: 'reunite',
+    title: 'After Decades apart, 4 lifelong friends reunite',
+    duration: '2 min 23 sec',
+    //price: 'GH₵60.00',
+    thumbnail: 'https://img.youtube.com/vi/tT-QUdMTbs4/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=tT-QUdMTbs4',
   },
 ];
 
@@ -349,7 +357,7 @@ export default function Home() {
 
             {/* Related Videos */}
             <div className="bg-card rounded-xl shadow-lg p-6 border border-border">
-              <h4 className="font-bold mb-4">You might also like</h4>
+              <h4 className="font-bold mb-4">You might also like these free videos</h4>
               <div className="space-y-3">
                 {RELATED_VIDEOS.map((video) => (
                   <div
